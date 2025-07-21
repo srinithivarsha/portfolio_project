@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Srinithi Varsha</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+      color: #1a1a1a;
+    }
+
+    nav {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-left {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-right ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-right ul li {
+      margin-left: 20px;
+    }
+
+    .nav-right ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-right ul li a:hover,
+    .nav-right ul li a.active {
+      color: #ffd700;
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px); /* Adjust for navbar height */
+      padding: 20px;
+    }
+
+    .about-section {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .about-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #0f2027;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 20px;
+      }
+
+      .about-section h1 {
+        font-size: 2rem;
+      }
+
+      .about-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">Portfolio</div>
+    <div class="nav-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Centered About Section -->
+  <div class="center-container">
+    <section class="about-section">
+      <h1>About Me</h1>
+      <p>Hi! I’m Srinithi Varsha.
+        I enjoy building websites using HTML, CSS, and Bootstrap,like making web pages that are clean, simple, and easy to use.
+        I use Bootstrap to help my sites look good on phones, tablets, and computers.
+        I have strong critical thinking skills that help me understand what users need and also use problem-solving skills to fix issues and make my websites work better.
+         I love learning new things and improving my web development skills.  
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills | Srinithi Varsha</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #92fe9d, #00c9ff);
+      color: #1a1a1a;
+    }
+
+    nav {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-left {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-right ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-right ul li {
+      margin-left: 20px;
+    }
+
+    .nav-right ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-right ul li a:hover {
+      color: #ffd700;
+    }
+
+    .skills-section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #0f2027;
+    }
+
+    p.description {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.8;
+      text-align: justify;
+      padding: 0 20px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p.description {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-left">Portfolio</div>
+    <div class="nav-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <h1>My Skills</h1>
+    <p class="description">
+        I have basic frontend development skills. I can build web pages using HTML and style them with CSS. I also use Bootstrap to make websites look good on all screen sizes. Along with these, I have good problem-solving skills and can think clearly to find simple and smart solutions.
+    </p>
+  </section>
+
+</body>
+</html>
