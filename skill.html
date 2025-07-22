@@ -1,116 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skills | Srinithi Varsha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Srinithi Varsha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body, html {
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #92fe9d, #00c9ff);
+      background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
       color: #1a1a1a;
     }
-
-    nav {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      padding: 16px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    .about-section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
     }
-
-    .nav-left {
-      font-size: 24px;
-      font-weight: bold;
-      color: white;
-    }
-
-    .nav-right ul {
-      list-style: none;
-      display: flex;
-    }
-
-    .nav-right ul li {
-      margin-left: 20px;
-    }
-
-    .nav-right ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .nav-right ul li a:hover {
-      color: #ffd700;
-    }
-
-    .skills-section {
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    .about-section h1 {
       color: #0f2027;
     }
-
-    p.description {
-      font-size: 1.2rem;
-      color: #333;
-      line-height: 1.8;
-      text-align: justify;
-      padding: 0 20px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      p.description {
-        font-size: 1rem;
-      }
-    }
+    
+    
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-left">Portfolio</div>
-    <div class="nav-right">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  
+  <nav class="navbar navbar-expand-lg sticky-top" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active text-warning" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- Skills Section -->
-  <section class="skills-section">
-    <h1>My Skills</h1>
-    <p class="description">
-        I have basic frontend development skills. I can build web pages using HTML and style them with CSS. I also use Bootstrap to make websites look good on all screen sizes. Along with these, I have good problem-solving skills and can think clearly to find simple and smart solutions.
-    </p>
-  </section>
+  
+  <div class="d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 80px); padding: 20px;">
+    <section class="about-section col-12 col-md-8 col-lg-6 text-center">
+      <h1 class="mb-4 display-5 fw-bold">About Me</h1>
+      <p class="fs-5 lh-lg text-dark">
+        Hi! I’m Srinithi Varsha. I enjoy building websites using HTML, CSS, and Bootstrap, like making web pages that are clean, simple, and easy to use. I use Bootstrap to help my sites look good on phones, tablets, and computers. I have strong critical thinking skills that help me understand what users need and also use problem-solving skills to fix issues and make my websites work better. I love learning new things and improving my web development skills.
+      </p>
+    </section>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
