@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Srinithi Varsha | Projects</title>
+  
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <style>
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-left {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      color: white !important;
+      transition: 0.3s;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #ffd700 !important;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 60px 15px;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0f2027;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      max-height: 350px;
+      height: 100%;
+    }
+    .project-card:hover {
+      background-color: #a7abad;
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .project-content {
+      padding: 18px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-content h3 {
+      color: #0f2027;
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+    .project-content p {
+      flex-grow: 1;
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      background: #203a43;
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+    footer p {
+      margin-bottom: 15px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 1.5rem;
+    }
+    .footer-links a {
+      color: #ffd700;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg sticky-top px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-left" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <main>
+    <h2>Projects</h2>
+
+    <div class="row g-4">
+
+      <a href="images/wed.jpeg" target="_blank" class="col-12 col-md-6">
+        <div class="project-card">
+          <img src="images/webb.jfif" alt="Screenshot of Web Development Project" />
+          <div class="project-content">
+            <h3>Web Development Project</h3>
+            <p>Responsive website built with HTML, CSS, and JavaScript. Includes modern layout, animations, and form handling.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/srinithivarsha/HTML---2025" target="_blank" class="col-12 col-md-6">
+        <div class="project-card">
+          <img src="images/download.jfif" alt="Screenshot of HTML, CSS and Bootstrap Project" />
+          <div class="project-content">
+            <h3>HTML, CSS & Bootstrap UI</h3>
+            <p>Elegant multi-page UI using Bootstrap, styled components, and custom responsive breakpoints.</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  
+  <footer>
+    <p>View more projects on</p>
+    <div class="footer-links">
+      <a href="https://github.com/srinithivarsha" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/srinithi-varsha" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm
